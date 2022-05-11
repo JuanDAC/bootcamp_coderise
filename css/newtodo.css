@@ -1,0 +1,28 @@
+
+
+.todolist {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    margin: unset;
+    padding: unset;
+}
+
+.todolist__item {
+    display: flex;
+    box-shadow: .3rem 0px 0px -1px inset var(--color-one);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.todolist__title {
+    margin: unset;
+    padding: unset;
+    font-size: 1rem;
+    color: var(--color-foreground);
+}
+
+.todolist__item > input[type="checkbox"]:checked + .todolist__content {
+    filter: opacity(0.5);
+}

@@ -1,0 +1,30 @@
+@keyframes advance__graph--surf {
+  0% {
+    background: linear-gradient(-5deg, var(--color-graph) var(--percentage), var(--color-shadow) calc(1% + var(--percentage)));
+  }
+  12.5% {
+    background: linear-gradient(-3.75deg, var(--color-graph) var(--percentage), var(--color-shadow) calc(1% + var(--percentage)));
+  }
+  25% {
+    background: linear-gradient(-2.5deg, var(--color-graph) var(--percentage), var(--color-shadow) calc(1% + var(--percentage)));
+  }
+  37.5% {
+    background: linear-gradient(-1.25deg, var(--color-graph) var(--percentage), var(--color-shadow) calc(1% + var(--percentage)));
+  }
+  50% {
+    background: linear-gradient(0deg, var(--color-graph) var(--percentage), var(--color-shadow) calc(1% + var(--percentage)));
+  }
+  62.5% {
+    background: linear-gradient(1.25deg, var(--color-graph) var(--percentage), var(--color-shadow) calc(1% + var(--percentage)));
+  }
+  75% {
+    background: linear-gradient(2.5deg, var(--color-graph) var(--percentage), var(--color-shadow) calc(1% + var(--percentage)));
+  }
+  87.5% {
+    background: linear-gradient(3.75deg, var(--color-graph) var(--percentage), var(--color-shadow) calc(1% + var(--percentage)));
+  }
+  100% {
+    background: linear-gradient(5deg, var(--color-graph) var(--percentage), var(--color-shadow) calc(1% + var(--percentage)));
+  }
+ 
+}

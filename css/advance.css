@@ -1,0 +1,38 @@
+.advance {
+  display: flex;
+  width: 100vw;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.advance__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  scroll-snap-align: start;
+}
+
+.advance__graph {
+    --percentage: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin: unset;
+    border-radius: 50%;
+    --color-graph: var(--color-one);
+    box-shadow: 0px 0px 0px .1rem inset var(--color-graph);
+    animation: advance__graph--surf 600ms infinite alternate ease-in-out;
+}
+
+
+.advance__item:nth-child(2) > .advance__graph {
+    animation-delay: -150ms;
+    --color-graph: var(--color-two);
+}
+
+.advance__item:nth-child(3) > .advance__graph {
+    animation-delay: -300ms;
+    --color-graph: var(--color-four);
+}

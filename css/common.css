@@ -1,0 +1,26 @@
+:root {
+  --color-one: #77e093;
+  --color-two: #ac82e0;
+  --color-three: #97e06c;
+  --color-four: #e05559;
+  --color-five: #e0de60;
+  --color-six: #e08de0;
+  --color-seven: #e0d199;
+  --color-eight: #7781e0;
+
+  --color-shadow: #d9e4ff;
+  --color-shadow-error: #ffd5cc;
+  --color-shadow-warn: #fff0cc;
+  --color-shadow-success: #e6fbff;
+
+  --color-foreground: #657780;
+  --color-foreground-little: #a1becc;
+}
+
+html,
+body,
+header {
+  padding: unset;
+  margin: unset;
+  font-family: 'Libre Franklin', sans-serif;
+}

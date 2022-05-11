@@ -1,0 +1,147 @@
+<!DOCTYPE html> <!-- version 5 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task of the week</title>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <header class="header">
+        <figure class="header__icon"></figure>
+    </header>
+    <main>
+        <section class="advance">
+            <article class="advance__item">
+                <figure class="advance__graph"></figure>
+                <small class="advanced__title">Salud</small>
+            </article>
+            <article class="advance__item">
+                <figure class="advance__graph"></figure>
+                <small class="advanced__title">Estudio</small>
+            </article>
+            <article class="advance__item">
+                <figure class="advance__graph"></figure>
+                <small class="advanced__title">Hobbies</small>
+            </article>
+            <article class="advance__item">
+                <figure class="advance__graph"></figure>
+                <small class="advanced__title">Salud</small>
+            </article>
+            <article class="advance__item">
+                <figure class="advance__graph"></figure>
+                <small class="advanced__title">Estudio</small>
+            </article>
+        </section>
+        <section class="schedule">
+            <article class="schedule__item">
+                <header class="schedule__header">
+                    <h1 class="schedule__title">hoy</h1>
+                    <span class="schedule__info">2/5</span>
+                </header>
+                <ul class="todolist">
+                    <li class="todolist__item">
+                        <input type="checkbox" name="id_task" id="id_task_1" />
+                        <label for="id_task_1" class="todolist__content">
+                            <h2 class="todolist__title">Dormir</h2>
+                            <span class="todolist__info">Hoy a las
+                                11:00pm</span>
+                        </label>
+                    </li>
+                    <li class="todolist__item">
+                        <input type="checkbox" name="id_task" id="id_task_2" />
+                        <label for="id_task_2" class="todolist__content">
+                            <h2 class="todolist__title">Levantarse</h2>
+                            <span class="todolist__info">Hoy a las
+                                06:00am</span>
+                        </label>
+                    </li>
+                </ul>
+            </article>
+            <article class="schedule__item">
+                <header class="schedule__header">
+                    <h1 class="schedule__title">mañana</h1>
+                    <span class="schedule__info">2/5</span>
+                </header>
+                <ul class="todolist">
+                    <li class="todolist__item">
+                        <input type="checkbox" name="id_task" id="id_task_1" />
+                        <label for="id_task_1" class="todolist__content">
+                            <h2 class="todolist__title">Dormir</h2>
+                            <span class="todolist__info">Mañana a las
+                                11:00pm</span>
+                        </label>
+                    </li>
+                    <li class="todolist__item">
+                        <input type="checkbox" name="id_task" id="id_task_2" />
+                        <label for="id_task_2" class="todolist__content">
+                            <h2 class="todolist__title">Levantarse</h2>
+                            <span class="todolist__info">Mañana a las
+                                06:00am</span>
+                        </label>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="newtodo">
+            <header class="newtodo__header">
+                <nav class="groupselector">
+                    <article class="groupselector__item">
+                        <figure class="groupselector__graph"></figure>
+                        <small class="groupselector__title">Salud</small>
+                    </article>
+                    <article class="groupselector__item">
+                        <figure class="groupselector__graph"></figure>
+                        <small class="groupselector__title">Educacion</small>
+                    </article>
+                    <article class="groupselector__item">
+                        <figure class="groupselector__graph"></figure>
+                        <small class="groupselector__title">Hobbies</small>
+                    </article>
+                </nav>
+                <h1 class="newtodo__title" contenteditable="true">Name of your
+                    task</h1>
+            </header>
+            <article class="newtodo__calendar">
+                <input type="checkbox" class="newtodo__inall"
+                    id="newtodo__inall" />
+                <label for="newtodo__inall" class="newtodo__inall">
+                    todos los dias
+                </label>
+                <nav class="newtodo__days">
+                    <input type="checkbox" id="newtodo__day_l"
+                        class="newtodo__day" name="newtodo__day_l" />
+                    <label for="newtodo__day_l" class="newtodo__day">L</label>
+                    <input type="checkbox" id="newtodo__day_l"
+                        class="newtodo__day" name="newtodo__day_l" />
+                    <label for="newtodo__day_l" class="newtodo__day">M</label>
+                    <input type="checkbox" id="newtodo__day_l"
+                        class="newtodo__day" name="newtodo__day_l" />
+                    <label for="newtodo__day_l" class="newtodo__day">M</label>
+                    <input type="checkbox" id="newtodo__day_l"
+                        class="newtodo__day" name="newtodo__day_l" />
+                    <label for="newtodo__day_l" class="newtodo__day">J</label>
+                    <input type="checkbox" id="newtodo__day_l"
+                        class="newtodo__day" name="newtodo__day_l" />
+                    <label for="newtodo__day_l" class="newtodo__day">V</label>
+                    <input type="checkbox" id="newtodo__day_l"
+                        class="newtodo__day" name="newtodo__day_l" />
+                    <label for="newtodo__day_l" class="newtodo__day">S</label>
+                    <input type="checkbox" id="newtodo__day_d"
+                        class="newtodo__day" name="newtodo__day_d" />
+                    <label for="newtodo__day_d" class="newtodo__day">D</label>
+                </nav>
+            </article>
+        </section>
+    </main>
+    <footer class="actions">
+        <button type="button" class="actions__new">
+            Nueva Tarea
+        </button>
+    </footer>
+</body>
+
+</html>
