@@ -1,28 +1,61 @@
-
-
-.todolist {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    list-style: none;
-    margin: unset;
-    padding: unset;
+.newtodo {
+  display: none;
+  position: absolute;
+  padding-block-start: 48px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
-.todolist__item {
-    display: flex;
-    box-shadow: .3rem 0px 0px -1px inset var(--color-one);
-    padding: 1rem;
-    border-radius: 1rem;
+.newtodo__calendar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.todolist__title {
-    margin: unset;
-    padding: unset;
-    font-size: 1rem;
-    color: var(--color-foreground);
+.newtodo__title {
+  text-align: center;
 }
 
-.todolist__item > input[type="checkbox"]:checked + .todolist__content {
-    filter: opacity(0.5);
+input[type='checkbox'].newtodo__inall {
+  display: none;
+}
+
+label.newtodo__inall {
+  cursor: pointer;
+  user-select: none;
+  height: 2rem;
+  padding-inline: 1rem;
+  margin-block-end: 2rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 0 0.3rem var(--color-shadow);
+}
+
+.newtodo__days {
+  display: flex;
+  gap: 1rem;
+}
+
+.newtodo__days input[type='checkbox'] {
+  display: none;
+}
+
+label.newtodo__day {
+  cursor: pointer;
+  user-select: none;
+  width: 2rem;
+  height: 2rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.3rem  var(--color-shadow);
+}
+
+.newtodo__days input[type='checkbox']:checked + label.newtodo__day {
+  box-shadow: 0 0 0 0.3rem var(--color-one);
 }

@@ -1,0 +1,28 @@
+
+.groupselector {
+  display: flex;
+  width: 100vw;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.groupselector__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  scroll-snap-align: start;
+}
+
+.groupselector__graph {
+  --percentage: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin: unset;
+  border-radius: 50%;
+  --color-graph: var(--color-one);
+  animation: advance__graph--surf 600ms infinite alternate ease-in-out;
+  box-shadow: 0px 0px 0px 1px inset var(--color-graph);
+}

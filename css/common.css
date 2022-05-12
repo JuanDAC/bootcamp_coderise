@@ -24,3 +24,7 @@ header {
   margin: unset;
   font-family: 'Libre Franklin', sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}

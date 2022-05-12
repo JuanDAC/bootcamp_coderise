@@ -1,0 +1,35 @@
+.actions {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 4rem;
+  z-index: 30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  box-shadow: 0 0 0 0.1rem inset var(--color-one);
+  background: white;
+  border-radius: 2rem 2rem 0px 0px;
+  overflow: hidden;
+}
+
+.actions__new {
+  color: var(--color-one);
+  font-weight: bold;
+  outline: none;
+  border: none;
+  margin: unset;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  height: 7rem;
+  width: 100%;
+  display: inline-grid;
+  place-items: center;
+}
+
+.actions:hover {
+    background-color: rgb(119 224 147 / 20%);
+}
