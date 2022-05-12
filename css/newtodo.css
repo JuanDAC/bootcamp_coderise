@@ -53,9 +53,13 @@ label.newtodo__day {
   display: inline-grid;
   place-items: center;
   border-radius: 50%;
-  box-shadow: 0 0 0 0.3rem  var(--color-shadow);
+  box-shadow: 0 0 0 0.3rem var(--color-shadow);
 }
 
 .newtodo__days input[type='checkbox']:checked + label.newtodo__day {
   box-shadow: 0 0 0 0.3rem var(--color-one);
+}
+
+.newtodo--show {
+  display: initial;
 }
