@@ -36,6 +36,10 @@ label.newtodo__inall {
   box-shadow: 0 0 0 0.3rem var(--color-shadow);
 }
 
+input[type='checkbox']:checked + label.newtodo__inall {
+  box-shadow: 0 0 0 0.3rem var(--color-one);
+}
+
 .newtodo__days {
   display: flex;
   gap: 1rem;

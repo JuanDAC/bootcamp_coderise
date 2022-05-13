@@ -2,11 +2,14 @@
 const KEY_APP = 'coderise';
 
 export const load = () => {
+    /*
+        variable constante
+    */
     const key = `${KEY_APP}-tasks`;
     const valueInString = localStorage.getItem(key) ?? '[]';
     const value = JSON.parse(valueInString);
     return value;
-}
+};
 
 
 export const save = (tasks = []) => {
